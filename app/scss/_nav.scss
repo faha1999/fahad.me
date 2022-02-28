@@ -31,3 +31,21 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    a {
+      i {
+        padding: 0;
+      }
+
+      span {
+        display: none;
+      }
+
+      &:hover {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

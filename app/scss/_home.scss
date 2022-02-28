@@ -40,3 +40,25 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .home {
+    text-align: center;
+    gap: 2rem;
+
+    .image img {
+      height: 30rem;
+      width: 30rem;
+    }
+
+    .content {
+      h3 {
+        font-size: 3rem;
+      }
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
