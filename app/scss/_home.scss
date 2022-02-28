@@ -1,0 +1,42 @@
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  min-height: calc(100vh - 6.5rem);
+
+  .image {
+    flex: 1 1 42rem;
+    text-align: center;
+
+    img {
+      height: 50rem;
+      width: 50rem;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+  }
+
+  .content {
+    flex: 1 1 42rem;
+
+    h3 {
+      color: $white;
+      font-size: 4rem;
+      padding-bottom: 0.5rem;
+    }
+
+    span {
+      font-size: 3rem;
+      color: $crimson;
+      padding: 0.5rem 0;
+      display: block;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $light-color;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+  }
+}
