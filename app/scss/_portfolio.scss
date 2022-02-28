@@ -1,0 +1,65 @@
+.portfolio {
+  text-align: center;
+
+  .box-container {
+    @include grid(31rem);
+    margin-bottom: 2rem;
+
+    .box {
+      height: 30rem;
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+        .content {
+          transform: translateY(0%);
+        }
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $light-bg;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        transform: translateY(-100%);
+        transition: 0.2s linear;
+
+        h3 {
+          font-size: 2.5rem;
+          color: $white;
+          text-transform: uppercase;
+          font-weight: normal;
+        }
+
+        p {
+          padding: 1rem 0;
+          font-size: 1.5rem;
+          line-height: 2;
+          color: $light-color;
+        }
+
+        a {
+          font-size: 2rem;
+          color: $crimson;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
